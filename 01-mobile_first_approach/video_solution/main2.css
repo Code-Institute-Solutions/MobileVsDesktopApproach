@@ -1,0 +1,28 @@
+/* styles for all devices and mobile */
+.column {
+    float: left; /* global css: same on all devices */
+    height: 50px; /* global css: same on all devices */
+    
+    /* mobile only */
+    width: 100%;
+    background-color: #000;
+    margin: 10px 0;
+}
+
+/* styles for desktop */
+@media (min-width: 992px) {
+    /* overwrites bg color on 18th line */
+    .column {
+        background-color: #0997d3; /* blue */
+    }
+}
+
+/* styles for tablet */
+@media (min-width: 768px) {
+    .column {
+        /* overwrites above margin, width and bg color */
+        margin: 10px;
+        width: 30%;
+        background-color: #e84610; /* red */
+    }
+}
